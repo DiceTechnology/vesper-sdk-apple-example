@@ -8,7 +8,6 @@
 
 import VesperSDK
 import AVDoris
-import GoogleCast
 
 class PlaybackViewController: UIViewController {
     var orientation = UIInterfaceOrientationMask.portrait
@@ -55,7 +54,6 @@ class PlaybackViewController: UIViewController {
         let config = VesperSDKConfig(apiConfig: apiConfig, authManager: authManager)
         let vesperSDKManager = VesperSDKManager(config: config)
         self.vesperSDKManager = vesperSDKManager
-        GCKCastContext.sharedInstance().discoveryManager.startDiscovery()
 
         self.source = source
                 
