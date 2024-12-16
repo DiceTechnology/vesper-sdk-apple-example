@@ -49,14 +49,16 @@ class PlaybackViewController: UIViewController {
     init(apiConfig: APIConfig,
          username: String,
          password: String,
-         source: ResolvableSource) {    
+         source: ResolvableSource) {
+        DorisLogger.logFilter = DorisLogType.allCases
+        
         let authManager = DebugDiceAuthManager(username: username, password: password, apiConfig: apiConfig)
         let config = VesperSDKConfig(apiConfig: apiConfig, authManager: authManager)
         let vesperSDKManager = VesperSDKManager(config: config)
         self.vesperSDKManager = vesperSDKManager
-
+        
         self.source = source
-                
+        
         super.init(nibName: nil, bundle: nil)
         self.view.backgroundColor = .black
         
@@ -90,7 +92,7 @@ class PlaybackViewController: UIViewController {
                 self.sampleLoad(playerManager: playerManager)
             case .failure(let error):
                 if let error = error as? VesperSDKError {
-                    print("zzz Create PlayerManager error: ", error)
+                    print("Create PlayerManager error: ", error)
                 }
             }
             
@@ -135,6 +137,7 @@ class PlaybackViewController: UIViewController {
         playerManager.load(source: source) { error in
             if let error = error as? VesperSDKError {
                 //handle load error
+                print(error)
             }
         }
     }
