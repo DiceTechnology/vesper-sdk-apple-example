@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27600455AAB642AE5E61D652 /* Pods_vesper_sdk_apple_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11E6B55AF75EF523DB75E53 /* Pods_vesper_sdk_apple_example.framework */; };
+		AC9AE29FC63596EB1F7B83F1 /* Pods_vesper_sdk_apple_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D053A21F6C220A411252348 /* Pods_vesper_sdk_apple_example.framework */; };
 		DFB8BA562C89EC8D00B5639C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8BA552C89EC8D00B5639C /* AppDelegate.swift */; };
 		DFB8BA5F2C89EC8E00B5639C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB8BA5E2C89EC8E00B5639C /* Assets.xcassets */; };
 		DFB8BA622C89EC8E00B5639C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB8BA602C89EC8E00B5639C /* LaunchScreen.storyboard */; };
@@ -24,9 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1DA9FA94533C7702581CD793 /* Pods-vesper-sdk-apple-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vesper-sdk-apple-example.debug.xcconfig"; path = "Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example.debug.xcconfig"; sourceTree = "<group>"; };
-		6CE33107C170283EB46EBD45 /* Pods-vesper-sdk-apple-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vesper-sdk-apple-example.release.xcconfig"; path = "Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example.release.xcconfig"; sourceTree = "<group>"; };
-		D11E6B55AF75EF523DB75E53 /* Pods_vesper_sdk_apple_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vesper_sdk_apple_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D053A21F6C220A411252348 /* Pods_vesper_sdk_apple_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vesper_sdk_apple_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C89657DEE8570181E9C0D82 /* Pods-vesper-sdk-apple-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vesper-sdk-apple-example.debug.xcconfig"; path = "Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5DE9F0D47E66D375D2E21F /* Pods-vesper-sdk-apple-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vesper-sdk-apple-example.release.xcconfig"; path = "Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example.release.xcconfig"; sourceTree = "<group>"; };
 		DFB8BA522C89EC8D00B5639C /* vesper-sdk-apple-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vesper-sdk-apple-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB8BA552C89EC8D00B5639C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFB8BA5E2C89EC8E00B5639C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,28 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27600455AAB642AE5E61D652 /* Pods_vesper_sdk_apple_example.framework in Frameworks */,
+				AC9AE29FC63596EB1F7B83F1 /* Pods_vesper_sdk_apple_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7AB6C04A13E141E356962D51 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D11E6B55AF75EF523DB75E53 /* Pods_vesper_sdk_apple_example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AEEF9B0950782A1D6E9CDCFF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1DA9FA94533C7702581CD793 /* Pods-vesper-sdk-apple-example.debug.xcconfig */,
-				6CE33107C170283EB46EBD45 /* Pods-vesper-sdk-apple-example.release.xcconfig */,
+				8C89657DEE8570181E9C0D82 /* Pods-vesper-sdk-apple-example.debug.xcconfig */,
+				AA5DE9F0D47E66D375D2E21F /* Pods-vesper-sdk-apple-example.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B3BED84A424E05B143AA2BE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D053A21F6C220A411252348 /* Pods_vesper_sdk_apple_example.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DFB8BA492C89EC8D00B5639C = {
@@ -79,7 +79,7 @@
 				DFB8BA542C89EC8D00B5639C /* vesper-sdk-apple-example */,
 				DFB8BA532C89EC8D00B5639C /* Products */,
 				AEEF9B0950782A1D6E9CDCFF /* Pods */,
-				7AB6C04A13E141E356962D51 /* Frameworks */,
+				B3BED84A424E05B143AA2BE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,12 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFB8BA662C89EC8E00B5639C /* Build configuration list for PBXNativeTarget "vesper-sdk-apple-example" */;
 			buildPhases = (
-				E8B0949893973692C182598A /* [CP] Check Pods Manifest.lock */,
+				22A395301B9160005EFDC958 /* [CP] Check Pods Manifest.lock */,
 				DFB8BA4E2C89EC8D00B5639C /* Sources */,
 				DFB8BA4F2C89EC8D00B5639C /* Frameworks */,
 				DFB8BA502C89EC8D00B5639C /* Resources */,
-				5CD8E9D656D2FD66C169E2ED /* [CP] Embed Pods Frameworks */,
-				9374C26BB145234C98239C56 /* [CP] Copy Pods Resources */,
+				3BFE08D3A82FCED85F0E5B28 /* [CP] Embed Pods Frameworks */,
+				7F3403FF93BF4B9989AF40D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,41 +197,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5CD8E9D656D2FD66C169E2ED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9374C26BB145234C98239C56 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8B0949893973692C182598A /* [CP] Check Pods Manifest.lock */ = {
+		22A395301B9160005EFDC958 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,6 +217,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BFE08D3A82FCED85F0E5B28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F3403FF93BF4B9989AF40D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -409,7 +409,7 @@
 		};
 		DFB8BA672C89EC8E00B5639C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DA9FA94533C7702581CD793 /* Pods-vesper-sdk-apple-example.debug.xcconfig */;
+			baseConfigurationReference = 8C89657DEE8570181E9C0D82 /* Pods-vesper-sdk-apple-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,7 +439,7 @@
 		};
 		DFB8BA682C89EC8E00B5639C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CE33107C170283EB46EBD45 /* Pods-vesper-sdk-apple-example.release.xcconfig */;
+			baseConfigurationReference = AA5DE9F0D47E66D375D2E21F /* Pods-vesper-sdk-apple-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
