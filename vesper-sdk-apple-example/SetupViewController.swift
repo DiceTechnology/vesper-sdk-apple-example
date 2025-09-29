@@ -92,7 +92,7 @@ class SetupViewController: UIViewController {
                                             password: passwordTextFiled.text ?? "",
                                             source: ResolvableSource(id: videoIDTextFiled.text ?? "",
                                                                      isLive: isLiveSwitch.isOn,
-                                                                     watchContext: watchContextPicker.watchContext))
+                                                                     watchContextList: [watchContextPicker.watchContext].compactMap{$0}))
             
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: true)

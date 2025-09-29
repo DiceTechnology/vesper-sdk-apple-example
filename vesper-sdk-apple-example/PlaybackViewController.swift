@@ -83,7 +83,7 @@ class PlaybackViewController: UIViewController {
             switch result {
             case .success(let playerManager):
                 self.playerManager = playerManager
-                self.playerManager?.uiManager?.viewModel.toggles.isFullscreen = orientation != .portrait
+                self.playerManager?.uiManager?.config.displayType = orientation != .portrait ? .max : .regular
                 
                 if let uiManager = playerManager.uiManager {
                     self.setupLayout(uiManager: uiManager)
@@ -102,7 +102,7 @@ class PlaybackViewController: UIViewController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        playerManager?.uiManager?.viewModel.toggles.isFullscreen = orientation != .portrait
+        playerManager?.uiManager?.config.displayType = orientation != .portrait ? .max : .regular
         self.landscapeConstraints.forEach { $0.isActive = orientation != .portrait }
         self.portraitConstraints.forEach { $0.isActive = orientation == .portrait }
         
@@ -164,16 +164,18 @@ extension PlaybackViewController: DorisViewOutputProtocol, DorisPlayerOutputProt
         case .backButtonTap:
             dismiss(animated: true)
         case .fullScreenButtonTap:
-            if playerManager?.uiManager?.viewModel.toggles.isFullscreen == true {
+            playerManager?.uiManager?.config.displayType = orientation != .portrait ? .max : .regular
+
+            if playerManager?.uiManager?.config.displayType == .max {
                 let value = UIInterfaceOrientation.portrait.rawValue
                 UIDevice.current.setValue(value, forKey: "orientation")
-                playerManager?.uiManager?.viewModel.toggles.isFullscreen = false
+                playerManager?.uiManager?.config.displayType = .regular
                 orientation = .portrait
                 UIViewController.attemptRotationToDeviceOrientation()
             } else {
                 let value = UIInterfaceOrientation.landscapeRight.rawValue
                 UIDevice.current.setValue(value, forKey: "orientation")
-                playerManager?.uiManager?.viewModel.toggles.isFullscreen = true
+                playerManager?.uiManager?.config.displayType = .max
                 orientation = .landscapeRight
                 UIViewController.attemptRotationToDeviceOrientation()
             }
