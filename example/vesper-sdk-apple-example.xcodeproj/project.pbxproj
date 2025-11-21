@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		721D7A1DC9B61C3CAA1511A8 /* Pods_vesper_sdk_apple_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8032324D56310AFB6D81BBDD /* Pods_vesper_sdk_apple_example.framework */; };
+		DF54CA6F2ED0A1320098C6D8 /* VesperSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DF54CA6E2ED0A1320098C6D8 /* VesperSDK */; };
+		DF54CA722ED0B5D70098C6D8 /* VesperSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DF54CA712ED0B5D70098C6D8 /* VesperSDK */; };
+		DF54CA752ED0B62B0098C6D8 /* VesperSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DF54CA742ED0B62B0098C6D8 /* VesperSDK */; };
+		DF5F6B1A2ECF5C39002FD2B3 /* VesperSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DF5F6B192ECF5C39002FD2B3 /* VesperSDK */; };
+		DF5F6B1D2ECF6CEF002FD2B3 /* VesperSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DF5F6B1C2ECF6CEF002FD2B3 /* VesperSDK */; };
 		DFB8BA562C89EC8D00B5639C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8BA552C89EC8D00B5639C /* AppDelegate.swift */; };
 		DFB8BA5F2C89EC8E00B5639C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB8BA5E2C89EC8E00B5639C /* Assets.xcassets */; };
 		DFB8BA622C89EC8E00B5639C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB8BA602C89EC8E00B5639C /* LaunchScreen.storyboard */; };
@@ -21,13 +25,11 @@
 		DFB8BA872C89F0DC00B5639C /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8BA7D2C89F0DC00B5639C /* UIView+LayoutGuide.swift */; };
 		DFB8BA882C89F0DC00B5639C /* UIControl+closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8BA7E2C89F0DC00B5639C /* UIControl+closure.swift */; };
 		DFB8BA892C89F0DC00B5639C /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB8BA7F2C89F0DC00B5639C /* UIView+Subviews.swift */; };
+		DFBA12FA2ED0B70A004E71ED /* VesperSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DFBA12F92ED0B70A004E71ED /* VesperSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06759EA4069DF4F697AE4F7A /* Pods-vesper-sdk-apple-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vesper-sdk-apple-example.release.xcconfig"; path = "Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example.release.xcconfig"; sourceTree = "<group>"; };
-		7C29B9A67574586D1147B1C6 /* Pods-vesper-sdk-apple-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vesper-sdk-apple-example.debug.xcconfig"; path = "Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example.debug.xcconfig"; sourceTree = "<group>"; };
-		8032324D56310AFB6D81BBDD /* Pods_vesper_sdk_apple_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vesper_sdk_apple_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFB8BA522C89EC8D00B5639C /* vesper-sdk-apple-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vesper-sdk-apple-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF69C1582ECF76C2000ACCB6 /* vesper-sdk-apple-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vesper-sdk-apple-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB8BA552C89EC8D00B5639C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFB8BA5E2C89EC8E00B5639C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFB8BA612C89EC8E00B5639C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,46 +51,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				721D7A1DC9B61C3CAA1511A8 /* Pods_vesper_sdk_apple_example.framework in Frameworks */,
+				DF54CA722ED0B5D70098C6D8 /* VesperSDK in Frameworks */,
+				DF5F6B1D2ECF6CEF002FD2B3 /* VesperSDK in Frameworks */,
+				DFBA12FA2ED0B70A004E71ED /* VesperSDK in Frameworks */,
+				DF5F6B1A2ECF5C39002FD2B3 /* VesperSDK in Frameworks */,
+				DF54CA752ED0B62B0098C6D8 /* VesperSDK in Frameworks */,
+				DF54CA6F2ED0A1320098C6D8 /* VesperSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8BB8813C9947F0C1719BFE14 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8032324D56310AFB6D81BBDD /* Pods_vesper_sdk_apple_example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AEEF9B0950782A1D6E9CDCFF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7C29B9A67574586D1147B1C6 /* Pods-vesper-sdk-apple-example.debug.xcconfig */,
-				06759EA4069DF4F697AE4F7A /* Pods-vesper-sdk-apple-example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		DFB8BA492C89EC8D00B5639C = {
 			isa = PBXGroup;
 			children = (
 				DFB8BA542C89EC8D00B5639C /* vesper-sdk-apple-example */,
-				DFB8BA532C89EC8D00B5639C /* Products */,
-				AEEF9B0950782A1D6E9CDCFF /* Pods */,
-				8BB8813C9947F0C1719BFE14 /* Frameworks */,
+				DF69C1582ECF76C2000ACCB6 /* vesper-sdk-apple-example.app */,
 			);
-			sourceTree = "<group>";
-		};
-		DFB8BA532C89EC8D00B5639C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DFB8BA522C89EC8D00B5639C /* vesper-sdk-apple-example.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DFB8BA542C89EC8D00B5639C /* vesper-sdk-apple-example */ = {
@@ -135,12 +115,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFB8BA662C89EC8E00B5639C /* Build configuration list for PBXNativeTarget "vesper-sdk-apple-example" */;
 			buildPhases = (
-				904745323CEBC2A8D352C546 /* [CP] Check Pods Manifest.lock */,
 				DFB8BA4E2C89EC8D00B5639C /* Sources */,
 				DFB8BA4F2C89EC8D00B5639C /* Frameworks */,
 				DFB8BA502C89EC8D00B5639C /* Resources */,
-				72AD827E8D58589FBB9E994D /* [CP] Embed Pods Frameworks */,
-				9E576FFCE0787C00E3530A63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,7 +125,7 @@
 			);
 			name = "vesper-sdk-apple-example";
 			productName = "vesper-sdk-apple-example";
-			productReference = DFB8BA522C89EC8D00B5639C /* vesper-sdk-apple-example.app */;
+			productReference = DF69C1582ECF76C2000ACCB6 /* vesper-sdk-apple-example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +152,10 @@
 				Base,
 			);
 			mainGroup = DFB8BA492C89EC8D00B5639C;
-			productRefGroup = DFB8BA532C89EC8D00B5639C /* Products */;
+			packageReferences = (
+				DFBA12F82ED0B70A004E71ED /* XCLocalSwiftPackageReference "../../vesper-sdk-apple-example" */,
+			);
+			productRefGroup = DFB8BA492C89EC8D00B5639C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -195,65 +175,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		72AD827E8D58589FBB9E994D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		904745323CEBC2A8D352C546 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-vesper-sdk-apple-example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E576FFCE0787C00E3530A63 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vesper-sdk-apple-example/Pods-vesper-sdk-apple-example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFB8BA4E2C89EC8D00B5639C /* Sources */ = {
@@ -409,7 +330,6 @@
 		};
 		DFB8BA672C89EC8E00B5639C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C29B9A67574586D1147B1C6 /* Pods-vesper-sdk-apple-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -439,7 +359,6 @@
 		};
 		DFB8BA682C89EC8E00B5639C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06759EA4069DF4F697AE4F7A /* Pods-vesper-sdk-apple-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -489,6 +408,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		DFBA12F82ED0B70A004E71ED /* XCLocalSwiftPackageReference "../../vesper-sdk-apple-example" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../vesper-sdk-apple-example";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF54CA6E2ED0A1320098C6D8 /* VesperSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VesperSDK;
+		};
+		DF54CA712ED0B5D70098C6D8 /* VesperSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VesperSDK;
+		};
+		DF54CA742ED0B62B0098C6D8 /* VesperSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VesperSDK;
+		};
+		DF5F6B192ECF5C39002FD2B3 /* VesperSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VesperSDK;
+		};
+		DF5F6B1C2ECF6CEF002FD2B3 /* VesperSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VesperSDK;
+		};
+		DFBA12F92ED0B70A004E71ED /* VesperSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VesperSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DFB8BA4A2C89EC8D00B5639C /* Project object */;
 }
